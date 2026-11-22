@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A little universe for Shivangi ✨</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+:root{--ink:#4d2638;--muted:#956b7b;--rose:#c96f89;--cream:#fff8f5;--gold:#c9a66b}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--ink);font-family:'DM Sans',sans-serif;background:radial-gradient(circle at 15% 15%,#ffe5eb 0,transparent 28%),radial-gradient(circle at 90% 80%,#f5dce7 0,transparent 30%),linear-gradient(135deg,#fff8f3,#f9eaf0 55%,#fff7f0);overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;border:1px solid #d8a7b5;opacity:.28;border-radius:50%;width:60vw;height:60vw;pointer-events:none;animation:drift 18s ease-in-out infinite alternate}body:before{top:-35vw;left:-22vw}body:after{bottom:-40vw;right:-25vw;animation-delay:-8s}
+@keyframes drift{to{transform:translate(5vw,4vw) rotate(18deg)}}
+.spark{position:fixed;color:#d9a7a8;pointer-events:none;animation:float 9s linear infinite;opacity:.7}@keyframes float{0%{transform:translateY(105vh) rotate(0);opacity:0}15%{opacity:.8}100%{transform:translateY(-10vh) rotate(260deg);opacity:0}}
+.wrap{width:min(900px,92vw);margin:auto;padding:28px 0 45px;position:relative;z-index:1}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;color:#9a6c7c;font-size:12px;letter-spacing:.18em;text-transform:uppercase}.brand{font-family:'Cormorant Garamond';font-size:20px;letter-spacing:.04em;color:#754254;text-transform:none}.progress{height:3px;background:#efd9df;border-radius:9px;overflow:hidden;margin-bottom:22px}.bar{height:100%;width:0;background:linear-gradient(90deg,#c56d88,#d5b17a);transition:width .5s}
+.card{min-height:620px;background:rgba(255,251,248,.78);border:1px solid rgba(198,145,158,.38);border-radius:28px;box-shadow:0 25px 80px #78425518,inset 0 1px white;backdrop-filter:blur(14px);padding:clamp(25px,6vw,62px);display:none;position:relative;overflow:hidden}.card.active{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;animation:appear .55s ease both}@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.eyebrow{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:#b17a8d;margin-bottom:18px}.hero{font-family:'Cormorant Garamond',serif;font-size:clamp(43px,8vw,76px);font-weight:500;line-height:.98;margin:0 0 20px;letter-spacing:-.035em}.hero em{color:#c56d88;font-weight:500}.copy{font-size:15px;line-height:1.9;color:#805d6b;max-width:590px;margin:0 auto 24px}.ornament{font-size:35px;color:#c88c9d;margin:8px 0 20px;letter-spacing:.2em}.pill{display:inline-flex;border:1px solid #e6c6ce;border-radius:30px;padding:10px 17px;color:#a66f82;font-size:12px;letter-spacing:.08em;margin:6px}.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}.btn{border:0;border-radius:40px;padding:14px 25px;background:linear-gradient(120deg,#bd6984,#d28da0);color:white;font:600 13px 'DM Sans';letter-spacing:.04em;cursor:pointer;box-shadow:0 9px 22px #b96d852b;transition:.2s}.btn:hover{transform:translateY(-3px);box-shadow:0 13px 28px #b96d8540}.btn.ghost{background:transparent;color:#9e687a;border:1px solid #dcb8c3;box-shadow:none}.btn.gold{background:linear-gradient(120deg,#b99a66,#d7bd8d)}.nav{display:flex;justify-content:space-between;align-items:center;margin-top:18px}.nav button{background:none;border:0;color:#9b6c7b;font:500 13px 'DM Sans';padding:12px;cursor:pointer}.nav button:disabled{opacity:.2;cursor:default}.dots{display:flex;gap:6px}.dot{width:5px;height:5px;border-radius:50%;background:#e2c3cc}.dot.on{background:#bd7188;width:18px;border-radius:8px}
+.note{font-family:'Cormorant Garamond';font-size:28px;line-height:1.3;color:#8b5368;max-width:600px;margin:12px auto 20px}.flower{font-size:68px;filter:drop-shadow(0 8px 10px #a95d7425);margin:4px 0 18px}.orbit{width:210px;height:210px;border:1px solid #e4bdc7;border-radius:50%;display:grid;place-items:center;margin:5px auto 22px;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;border:1px dashed #dfbdc5;border-radius:50%;inset:15px;animation:spin 22s linear infinite}.orbit:after{inset:-12px;border-style:solid;opacity:.45;animation-direction:reverse}@keyframes spin{to{transform:rotate(360deg)}}.heart{font-size:72px;animation:pulse 1.8s ease-in-out infinite;filter:drop-shadow(0 8px 14px #c66b883d)}@keyframes pulse{50%{transform:scale(1.12)}}
+.song{background:#fff9f7;border:1px solid #efd9df;border-radius:18px;padding:17px 20px;text-align:left;width:min(570px,100%);margin:8px 0}.song small{color:#b27b8c;text-transform:uppercase;letter-spacing:.16em;font-size:9px}.song strong{display:block;font-family:'Cormorant Garamond';font-size:24px;font-weight:600;margin:4px 0;color:#754254}.song p{margin:0;color:#8d6876;font-size:13px;line-height:1.65}.reveal{background:#fff7f3;border:1px solid #ecd1d8;border-radius:20px;padding:20px;margin:10px 0;width:min(580px,100%);cursor:pointer;transition:.25s}.reveal:hover{transform:translateY(-3px)}.reveal .hidden{display:none;color:#885b6d;font-family:'Cormorant Garamond';font-size:25px;line-height:1.3;margin-top:12px}.reveal.open .hidden{display:block}.reveal .hint{font-size:12px;color:#b17a8d;letter-spacing:.1em}.final .hero{font-size:clamp(48px,9vw,86px)}.final .btn{font-size:15px;padding:17px 34px}.tiny{font-size:11px;color:#b28a96;margin-top:20px;line-height:1.7}
+@media(max-width:600px){.card{min-height:610px;padding:28px 20px}.top{font-size:10px}.nav{margin-top:10px}.hero{line-height:1.02}}
+</style></head>
+<body>
+<div class="wrap">
+ <div class="top"><span class="brand">a little universe ✦</span><span>made for Shivangi</span></div>
+ <div class="progress"><div class="bar" id="bar"></div></div>
+ <main>
+  <section class="card active">
+   <div class="eyebrow">A tiny announcement from Aditya</div><div class="ornament">✧ ♡ ✧</div>
+   <h1 class="hero">Hello, <em>kuchu puchu.</em></h1>
+   <p class="copy">Before you ask, no, this is not a normal webpage. It has been carefully prepared by one very suspicious boy who has been smiling at his screen while making it.</p>
+   <div class="pill">For one very pretty girl</div><div class="pill">A little mischief included</div>
+   <div class="actions"><button class="btn" onclick="next()">I'm listening… ✨</button></div>
+   <div class="tiny">P.S. You look extra cute when you're curious. Just saying.</div>
+  </section>
+  <section class="card">
+   <div class="eyebrow">Chapter 01 · A serious investigation</div><div class="flower">🕵🏻‍♂️🌷</div>
+   <h2 class="hero">One question, <em>miss…</em></h2>
+   <p class="copy">How does someone manage to be this pretty, this adorable, and this effortlessly distracting… all at once?</p>
+   <div class="reveal" onclick="this.classList.toggle('open')"><div class="hint">TAP TO OPEN THE CONFIDENTIAL REPORT ↗</div><div class="hidden">Finding: the smile is dangerously charming. The eyes? A complete distraction. The person conducting this investigation has forgotten what he was doing. ♡</div></div>
+   <p class="copy">And yes, kuchu puchu, you are absolutely the reason for this very important research.</p>
+   <div class="actions"><button class="btn" onclick="next()">Continue, detective 💌</button></div>
+  </section>
+  <section class="card">
+   <div class="eyebrow">Chapter 02 · If you were a melody</div><div class="orbit"><div class="heart">♡</div></div>
+   <h2 class="hero">You'd be my <em>favourite tune.</em></h2>
+   <p class="copy">Some songs say what ordinary words can't. And somehow, every soft melody starts making sense when I think of you.</p>
+   <div class="song"><small>Old-school magic · Kishore Kumar</small><strong>O Mere Dil Ke Chain</strong><p>That warm, timeless kind of affection — the sort that makes an ordinary day feel softer.</p></div>
+   <div class="song"><small>A little moonlight · Blackmail</small><strong>Pal Pal Dil Ke Paas</strong><p>If a song could feel like having someone close, even from miles away, this would be it.</p></div>
+   <div class="actions"><button class="btn" onclick="next()">Play the next thought ♡</button></div>
+  </section>
+  <section class="card">
+   <div class="eyebrow">Chapter 03 · A compliment intermission</div><div class="flower">🌙✨🌹</div>
+   <h2 class="hero">The moon called.<br><em>It wants its competition back.</em></h2>
+   <p class="copy">I was going to write a long paragraph about how beautiful you are, but then I realised the paragraph would need its own paragraph. So here's the short version:</p>
+   <div class="note">“Yeh chand sa roshan chehra” energy… but honestly, the moon has some catching up to do.</div>
+   <p class="copy">And the best part? It's not just how you look. It's the little things — your expressions, your way of talking, your laugh, the tiny details you probably don't even notice.</p>
+   <div class="actions"><button class="btn" onclick="next()">Stop making me blush 🙈</button></div>
+  </section>
+  <section class="card">
+   <div class="eyebrow">Chapter 04 · The soundtrack gets softer</div><div class="ornament">❀ ♡ ❀</div>
+   <h2 class="hero">Some feelings sound<br><em>like these.</em></h2>
+   <div class="song"><small>Aashiqui 2 · Soul-deep</small><strong>Tum Hi Ho</strong><p>That feeling when one person becomes the thought behind a hundred little smiles.</p></div>
+   <div class="song"><small>Rab Ne Bana Di Jodi · Tender wonder</small><strong>Tujh Mein Rab Dikhta Hai</strong><p>When someone makes the world feel a little more magical just by being in it.</p></div>
+   <div class="song"><small>Bhediya · Soft and hopeful</small><strong>Apna Bana Le</strong><p>A gentle wish to make more memories, share more silly moments, and become each other's safe place.</p></div>
+   <p class="copy">No dramatic declarations. Just a heart that keeps choosing your company.</p>
+   <div class="actions"><button class="btn" onclick="next()">There's more? 💗</button></div>
+  </section>
+  <section class="card">
+   <div class="eyebrow">Chapter 05 · A little international romance</div><div class="flower">🎹💫</div>
+   <h2 class="hero">If this were a movie…</h2>
+   <p class="copy">The soundtrack would have a little piano, a little old-school charm, and a lot of scenes where the main character looks at you like you're the best plot twist ever.</p>
+   <div class="song"><small>Elvis Presley · The effortless kind</small><strong>Can't Help Falling in Love</strong><p>Like a feeling that arrives gently and somehow feels completely natural.</p></div>
+   <div class="song"><small>Christina Perri · A thousand tomorrows</small><strong>A Thousand Years</strong><p>For the kind of connection that makes even the simplest moments feel worth keeping.</p></div>
+   <div class="song"><small>Coldplay · Golden-hour feelings</small><strong>Yellow</strong><p>For seeing someone as extraordinary, even when they're just being themselves.</p></div>
+   <div class="actions"><button class="btn" onclick="next()">Okay, Aditya… what is this? 😌</button></div>
+  </section>
+  <section class="card">
+   <div class="eyebrow">Chapter 06 · The little things</div><div class="ornament">♡ ♡ ♡</div>
+   <h2 class="hero">A few things I<br><em>hope you know.</em></h2>
+   <div class="reveal" onclick="this.classList.toggle('open')"><div class="hint">01 · TAP TO REVEAL</div><div class="hidden">You deserve compliments on the days you feel pretty — and especially on the days you don't.</div></div>
+   <div class="reveal" onclick="this.classList.toggle('open')"><div class="hint">02 · TAP TO REVEAL</div><div class="hidden">Your silly side is precious. Please never feel you have to be anything other than completely yourself.</div></div>
+   <div class="reveal" onclick="this.classList.toggle('open')"><div class="hint">03 · TAP TO REVEAL</div><div class="hidden">I want to collect the ordinary moments with you: random talks, tiny adventures, laughter over absolutely nothing.</div></div>
+   <div class="actions"><button class="btn" onclick="next()">One last page… 💌</button></div>
+  </section>
+  <section class="card final">
+   <div class="eyebrow">The last page · From Aditya, with a very full heart</div><div class="heart">💗</div>
+   <h2 class="hero">Kuchu puchu,<br>will you be<br><em>my girlfriend?</em></h2>
+   <p class="copy">I'd love to make you smile, cheer for you, listen to all your stories, annoy you with affection, and make a thousand little memories together. No pressure, no perfect answer needed — just something honest from me to you.</p>
+   <div class="actions"><button class="btn gold" onclick="accepted()">Yes, Aditya. ♡</button><button class="btn ghost" onclick="talk()">Can we talk about it? 💌</button></div>
+   <div class="tiny">Whatever your answer, thank you for being you.<br>— Aditya</div>
+   <div id="answer" style="display:none;margin-top:22px;font-family:'Cormorant Garamond';font-size:27px;color:#a95d78"></div>
+  </section>
+ </main>
+ <div class="nav"><button id="prev" onclick="prev()" disabled>← Previous</button><div class="dots" id="dots"></div><button id="next" onclick="next()">Next →</button></div>
+</div>
+<script>
+const pages=[...document.querySelectorAll('.card')];let current=0;
+const dots=document.getElementById('dots');pages.forEach((_,i)=>{let d=document.createElement('span');d.className='dot'+(i===0?' on':'');dots.appendChild(d)});
+function show(){pages.forEach((p,i)=>p.classList.toggle('active',i===current));document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('on',i===current));document.getElementById('bar').style.width=((current+1)/pages.length*100)+'%';document.getElementById('prev').disabled=current===0;document.getElementById('next').style.visibility=current===pages.length-1?'hidden':'visible';window.scrollTo({top:0,behavior:'smooth'})}
+function next(){if(current<pages.length-1){current++;show()}}function prev(){if(current>0){current--;show()}}
+function accepted(){const a=document.getElementById('answer');a.style.display='block';a.innerHTML='YOU JUST MADE ADITYA THE HAPPIEST BOY. ♡<br><span style="font-size:16px">A new chapter begins…</span>';confetti()}
+function talk(){const a=document.getElementById('answer');a.style.display='block';a.textContent='Of course. Take your time, kuchu puchu. I’m right here. ♡'}
+function confetti(){for(let i=0;i<28;i++){let s=document.createElement('span');s.textContent=['♡','✦','✿','♥'][i%4];s.style.cssText=`position:fixed;left:${Math.random()*100}vw;top:-20px;z-index:5;color:${i%2?'#c56d88':'#c9a66b'};font-size:${14+Math.random()*20}px;pointer-events:none;transition:transform 3s linear,opacity 3s;`;document.body.appendChild(s);requestAnimationFrame(()=>{s.style.transform=`translateY(${110+Math.random()*80}vh) rotate(${Math.random()*500}deg)`;s.style.opacity=0});setTimeout(()=>s.remove(),3200)}}
+for(let i=0;i<14;i++){let s=document.createElement('span');s.className='spark';s.textContent=['✧','♡','✦'][i%3];s.style.left=Math.random()*100+'vw';s.style.animationDelay=Math.random()*9+'s';s.style.fontSize=(12+Math.random()*17)+'px';document.body.appendChild(s)}
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')next();if(e.key==='ArrowLeft')prev()});show();
+</script></body></html>
